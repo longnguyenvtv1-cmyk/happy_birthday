@@ -492,8 +492,11 @@ body {
   background: #fdf5e6;
   width: 90%;
   max-width: 500px;
+  max-height: 80vh; /* Giới hạn chiều cao tối đa bằng 80% màn hình */
+  overflow-y: auto; /* Bật thanh cuộn dọc khi nội dung quá dài */
+  -webkit-overflow-scrolling: touch; /* Giúp cuộn mượt trên iPhone/Safari */
   padding: 25px;
-  border-radius: 5px;
+  border-radius: 12px;
   position: relative;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   border: 6px double #d4a373;
